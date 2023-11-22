@@ -1,0 +1,21 @@
+
+.body{
+    --roboto:roboto;
+
+    --fundoBrancoPreto:#072241;
+    --pretoAzul:#000;
+
+    --white:#fff;
+    --brancoAzul:#000;
+
+}
+.dark {
+    --brancoAzul:#072241;
+
+    --fundoBrancoPreto:#ebebeb;
+    --white:#000;
+    --pretoAzul:#072241;
+
+
+
+  }

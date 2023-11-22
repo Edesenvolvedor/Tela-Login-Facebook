@@ -1,0 +1,76 @@
+
+body::-webkit-scrollbar {
+    width: 12px;                
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: white;       
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color:var(--azulEscuro);     
+    border-radius: 20px;      
+   }  
+
+   .limita-largura {
+    width: 100%;
+    min-width: 320px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.apresentacao {
+  padding: 3rem;
+    text-align: right;
+    width: calc(100% - 70px);
+    overflow-y: scroll;
+    height: 315px;
+    width: 100%;
+    margin: 15px 0;
+   
+     
+}
+.apresentacao h1{
+  font-size: 1rem;
+}
+.apresentacao p{
+  font-size: 1.2rem;
+}
+.apresentacao:hover{
+  cursor: pointer;
+  }
+     
+   .apresentacao::-webkit-scrollbar {
+    width: 12px;        
+  }
+  
+  .apresentacao::-webkit-scrollbar-track {
+    background: white;      
+  }
+  
+  .apresentacao::-webkit-scrollbar-thumb {
+    background-color:var(--azulEscuro);    
+    border-radius: 20px;      
+   }
+   @media screen and (max-width:800px){/*quando a tela estiver nesse tamanho essaes botoes aparecem*/
+    .limita-largura {
+      width: 100%;
+      min-width:220px;
+      max-width: 994px;
+      margin: 0 auto;
+  }
+
+  
+  .apresentacao{
+    padding: 1px;
+    width: 100%;
+
+    height:10rem;
+
+
+  }
+  .apresentacao p{
+    font-size: 1rem;
+    text-align: center;
+
+  }
+  }

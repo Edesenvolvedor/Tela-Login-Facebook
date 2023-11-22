@@ -1,0 +1,48 @@
+
+.btn {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 2rem;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--azul);
+    border-radius: 20px;
+    text-decoration: none;
+    animation: float 2s ease-in-out infinite;
+
+
+}
+@keyframes float {
+    0%{
+        transform: translateY(0);
+    }        
+    50%{
+        transform: translateY(-15px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+.btn::after {
+    content: "↑";
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--branco);
+    transition: margin-top 250ms;
+    
+    
+}
+.btn:hover{
+    background-color: var(--branco);
+
+}
+.btn:hover::after {
+    margin-top:-8px;
+    color: var(--preto);
+
+}

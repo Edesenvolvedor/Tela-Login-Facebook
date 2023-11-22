@@ -1,0 +1,66 @@
+ 
+.fundoPopUp{ /*todo conteudo q vai aparecer depois do click, ta aqui dentro*/
+    z-index: 1;
+    background: rgba(0, 0, 0, .5);
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    display: none; /*por padrão ter esse display c none pra nao ser exibido, a menos que seja clicado*/
+
+}
+
+.popup{
+    padding: 3rem;
+    margin: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 80rem;
+    max-height:600px;
+    background:rgb(43, 42, 42);
+    position: relative ;
+}
+
+.popup a{
+    color:white;
+    border:0;
+    cursor:pointer;
+    text-decoration: none;/*Pra remover o traço abaixo do link*/
+ }
+ 
+
+.botaoFechar{
+    padding:4px 19px;
+    background-color: brown;
+    color: white;
+    position: absolute;
+    top:5px;
+    right:15px;
+    cursor:pointer;
+} 
+.botaoFechar:hover{
+    background-color: rgb(151, 7, 7);
+
+
+}
+.popcontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+@media screen and (max-width:800px){/*quando a tela estiver nesse tamanho essaes botoes aparecem*/
+    .popup{
+        margin: 1rem;
+        padding: 1rem;
+        
+    }
+
+    .popcontent{
+        display: block;
+ 
+    }
+}

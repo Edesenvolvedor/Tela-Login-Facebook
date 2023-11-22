@@ -1,0 +1,79 @@
+html{
+  height: 100%;
+}
+body{
+  height: 100%;
+}
+ section{
+    width: 100%;
+    height: 400px;    
+    text-align: center;
+    justify-content: center;
+    padding: 40px, 4%;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: var(--fundoBrancoPreto);
+ 
+ }
+ @media screen and (max-width:2000px){/*quando a tela estiver nesse tamanho essaes botoes aparecem*/
+
+ section:nth-of-type(1){ 
+  height: 60rem;    
+  color: var(--branco);
+ }
+
+ section:nth-of-type(2){
+  height:580rem;    
+
+}
+section:nth-of-type(3){ 
+  background-color: var(--pretoAzul);
+  height: 25rem;   
+}
+ }
+@media screen and (max-width:1000px){/*quando a tela estiver nesse tamanho essaes botoes aparecem*/
+  section:nth-of-type(1){ 
+    height: 40rem;    
+ } 
+  section:nth-of-type(2){ 
+  height: 700rem;    
+
+}
+section:nth-of-type(3){
+  display: block;
+  height: 35rem;
+  background-color: var(--pretoAzul);
+}
+
+}
+
+@media screen and (max-width:800px){/*quando a tela estiver nesse tamanho essaes botoes aparecem*/
+
+  section:nth-of-type(2){ 
+  height: 700rem;    
+
+}
+section:nth-of-type(3){
+  display: block;
+  height: 39rem;
+  background-color: var(--pretoAzul);
+
+}
+}
+@media screen and (max-width:500px){/*quando a tela estiver nesse tamanho essaes botoes aparecem*/
+
+  section:nth-of-type(2){ 
+  height: 700rem;    
+  
+}
+section:nth-of-type(3){
+  display: block;
+  height: 39rem;
+  background-color: var(--pretoAzul);
+
+}
+}
